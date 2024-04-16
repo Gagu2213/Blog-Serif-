@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+
+body {
+    background-color: rgb(245, 249, 253);
+}
+
+header{display: flex; /*justify-content: center;*/
+flex-direction:row
+}
+
+.logo{display: inline-block;}
+nav{display: inline-block;padding: 30px; }/*Los alinea en un fila horizontal en bloques*/
+
+nav ul{list-style: none;}/*Le saca los puntitos de coienzo*/
+li{
+    display: inline-flex;flex-direction: row;}
+a {color: black;
+    text-decoration: none; 
+    text-align: center; 
+    padding: 12px;}
+    /*--------------------------*/
+    /* menu desplegable */
+.dropdown-menu /*sin despliegue*/{
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-top: none; 
+    z-index: 1;} 
+
+    
+/*CON DESPLIEGUE*/
+/* Mostrar el dropdown al pasar el cursor sobre el elemento padre */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostrar al pasar el cursor */
+}
+
+/* Estilos adicionales para los elementos del menú desplegable */
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}
+
+/*-----------------------------------------------------*/
+/* Encabezado Imagen */
+.encabezado-imagen {
+    background-image: url('https://cdn.pixabay.com/photo/2019/12/19/14/22/the-background-4706293_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 470px;
+}
+
+.encabezado-contenido {
+    display: flex;
+    text-align: left;
+    color: #fff;
+    padding: 100px; /* Ajusta según sea necesario */
+    flex-direction: column;
+}
+
+.encabezado-titulo {
+  font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    max-width: 900px;
+    min-width: 603px;
+    text-align: start;
+}
+
+.encabezado-texto {
+    font-size: 27px;
+    text-align: start;
+    padding-top: 80px;
+    min-width: 571px;
+    max-width: 727px;
+}
+
+/*TEXTOS*/
+/* CSS */
+.titulo-principal {
+  font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    padding: 50px;
+    padding-bottom: 15px;
+    text-align: center; /* Ahora centrado */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado horizontal */
+}
+
+.Definicion {
+  font-family: "EB Garamond", serif;
+    text-align: justify; /* Alineación justificada */
+    padding: 0 20px; /* Espaciado horizontal */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado horizontal */
+    margin-bottom: 46px;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .titulo-principal {
+        font-size: 40px;
+    }
+    
+    .Definicion {
+        margin: 20px;
+        margin-bottom: 60px;
+        padding: 0 10px; /* Reducción del espaciado horizontal para dispositivos móviles */
+        min-width: auto;
+        max-width: 90%;
+    }
+}
+/*--------------------------------*/
+/* Otros motivos del porqué aprender Illustrator*/
+.razon-content{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 50px; overflow-wrap: normal;}
+.bloque,.dos-bloque{
+    font-size: 20px;
+    padding: 90px; 
+    margin: auto 50px; 
+    padding-top: 0;
+    padding-bottom: 34px;}
+    .dos-bloque{max-width: 2500px;
+    padding-left: 42px;}
+/* Unidades */
+.catalogo {
+    margin: auto;
+    padding: 20px;
+  }
+
+.unidades-catalogo-titulo{
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    padding: 50px;
+    padding-bottom: 15px;
+    text-align: center; /* Ahora centrado */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado horizontal */}
+
+
+.unidades-contenedor{display: grid;
+    grid-template-columns: repeat(4, 1fr);}
+
+  .unidad-1 {
+    background-image: url("./Pines/pin-we-01.png"); /* Corregimos la ruta de la imagen */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .unidad-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .unidad-3 {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unidad-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
